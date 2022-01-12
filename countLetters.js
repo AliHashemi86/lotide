@@ -9,7 +9,6 @@ const assertEqual = function(actual, expected) {
 
 const countLetters = function(sentence) {
  let result = {};
- sentence = sentence.toLowerCase()
 
  for (const alphabet of sentence) {
    if (alphabet !== " ") {
@@ -24,5 +23,5 @@ const countLetters = function(sentence) {
  return result;
 }
 
-const testSentence = "learning coding with Lighthouse"
+const testSentence = "lighthouse is the house"
 console.log(countLetters(testSentence))
