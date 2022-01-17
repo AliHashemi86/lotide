@@ -2,11 +2,10 @@ const assertEqual = require('./assertEqual')
 
 
 const tail = function(array) {
-  let newArray = [];
-  for (i = 0; i < array.length; i++) {
-    newArray.push(array[i]);
-  }
+  let newArray = [...array];
+  newArray.splice(0,1);
   return newArray;
 };
+
 
 module.exports = tail;
